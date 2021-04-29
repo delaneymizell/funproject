@@ -2,8 +2,8 @@ import smtplib
 
 def emailsenderclass(
     sender_email = "memesx69420@gmail.com"
-    receiver_email = "devon.boyd.swamthemoat@gmail.com "
-    password = "DctmAwesome27!"
+    receiver_email = input(str("enter the desired email"))
+    password = input(str("enter your password"))
     message  = "pee pee poo poo"
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
