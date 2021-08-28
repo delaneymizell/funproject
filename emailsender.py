@@ -1,6 +1,6 @@
 import smtplib
 
-def emailsenderclass(
+def emailsenderclass():
     sender_email = "memesx69420@gmail.com"
     receiver_email = input(str("enter the desired email"))
     password = input(str("enter your password"))
@@ -11,4 +11,4 @@ def emailsenderclass(
     print("Login success")
     server.sendmail(sender_email, receiver_email, message)
     print("Email has been sent")
-)
+
