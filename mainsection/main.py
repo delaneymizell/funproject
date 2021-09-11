@@ -24,7 +24,4 @@ def loopprac (word):                            #simple loop prac
             break
 
 def caller(loopprac):
-
-    
-
-
+    print(loopprac)
