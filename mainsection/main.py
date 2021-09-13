@@ -1,3 +1,5 @@
+import os
+
 def main ():
     print("this is delaneys work")
 
@@ -22,6 +24,18 @@ def loopprac (word):                            #simple loop prac
         print('you entered this' , word)
         if word == 'stop':
             break
+def abstractionprac():
+    print(loopprac('dog'))
 
-def caller(loopprac):
-    print(loopprac)
+def lastindexof():
+    string1 = ("test.yaml.file.csv")
+    indexofperiod = string1.rindex(".") + 1
+    filetype = string1[indexofperiod:len(string1)]
+    print(filetype)
+
+    
+
+
+    
+
+
