@@ -30,6 +30,5 @@ def abstractionprac(word):
 
 def lastindexof():
     string1 = ("test.yaml.file.csv")
-    indexofperiod = string1.rindex(".") + 1
-    filetype = string1[indexofperiod:len(string1)]
+    filetype = string1[(string1.rindex(".") + 1):len(string1)]
     print(filetype)
