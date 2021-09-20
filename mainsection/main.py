@@ -24,9 +24,14 @@ def loopprac ():                            #simple loop prac
         print('you entered this' , word)
         if word == 'stop':
             break
-        
-def abstractionprac(word):
-    print(loopprac(word))
+
+def abstractprac(words):
+    totalnum =  words + 'end'
+    return totalnum
+
+def abstractcaller(): # fixed this abstration prac but sill need to comment it out for it to work
+    words = input()
+    abstractprac(words)
 
 def lastindexof():
     string1 = ("test.yaml.file.csv")
