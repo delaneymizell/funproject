@@ -1,9 +1,6 @@
-<<<<<<< HEAD
+
 import os
 import datetime as datetime
-=======
-
->>>>>>> 8f6316a48d5491145ea80e39877c7a3e581f6e8f
 
 def main ():
     print("this is delaneys work")
@@ -42,7 +39,6 @@ def lastindexof():
     string1 = ("test.yaml.file.csv")
     filetype = string1[(string1.rindex(".") + 1):len(string1)]
     print(filetype)
-<<<<<<< HEAD
 
 def testy():
     name = "john"
@@ -111,5 +107,4 @@ def minustest():
     newname = name[:-1] 
     print(name + ' ' + newname)
 
-=======
->>>>>>> 8f6316a48d5491145ea80e39877c7a3e581f6e8f
+
