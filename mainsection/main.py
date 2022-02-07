@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import os
 import datetime as datetime
+=======
+
+>>>>>>> 8f6316a48d5491145ea80e39877c7a3e581f6e8f
 
 def main ():
     print("this is delaneys work")
@@ -9,7 +13,7 @@ def dictprac ():
     usernum1 = dict(uandp)
     print("the username is " + usernum1['user'] + " and the password is " + usernum1['passw'] + "!")
 
-def loopprac (word):                            #simple loop prac
+def loopprac ():                            #simple loop prac
     for x in range(1,10):                   #easist way to make a certain length loop
         print("the value of x is %d" %x)    #%d is integer %s is string
     else:
@@ -25,14 +29,20 @@ def loopprac (word):                            #simple loop prac
         print('you entered this' , word)
         if word == 'stop':
             break
-def abstractionprac():
-    print(loopprac('dog'))
+
+def abstractprac(words):
+    totalnum =  words + 'end'
+    return totalnum
+
+def abstractcaller(): # fixed this abstration prac but sill need to comment it out for it to work
+    words = input()
+    abstractprac(words)
 
 def lastindexof():
     string1 = ("test.yaml.file.csv")
-    indexofperiod = string1.rindex(".") + 1
-    filetype = string1[indexofperiod:len(string1)]
+    filetype = string1[(string1.rindex(".") + 1):len(string1)]
     print(filetype)
+<<<<<<< HEAD
 
 def testy():
     name = "john"
@@ -101,3 +111,5 @@ def minustest():
     newname = name[:-1] 
     print(name + ' ' + newname)
 
+=======
+>>>>>>> 8f6316a48d5491145ea80e39877c7a3e581f6e8f
