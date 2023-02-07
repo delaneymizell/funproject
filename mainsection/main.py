@@ -98,9 +98,9 @@ def functest():
     x= 1 
     y = '1'
     if x:
-        print('xyeet')
+        print(x + 'yeet')
     if y:
-        print('yyeet')
+        print(y+ 'yeet')
 
 def minustest():
     name = 'delaney'
