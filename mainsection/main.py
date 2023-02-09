@@ -95,16 +95,69 @@ def filereader():
     print(f.read())
 
 def functest():
-    x= 1 
+    x = 1 
     y = '1'
     if x:
         print(x + 'yeet')
     if y:
-        print(y+ 'yeet')
+        print(y + 'yeet')
 
-def minustest():
+def slicing():
     name = 'delaney'
-    newname = name[:-1] 
-    print(name + ' ' + newname)
+    sliced = name[:-2] 
+    print(name + ' ' + sliced)
+    numbers = [1,2,3,4,5,6,7,8,9,10]
+    ### [firstindex:lastindex:skiping(if neg go backwards)]
+    number = numbers[0::2]
+    backnum = numbers[:0:-2]
+    print(number)
+    print(backnum)
 
+def split():
+    name = "d.e.l.a.n.e.y"
+    letters = name.split(".")
+    full = ""
+    for i in letters:
+        full += i
+    print(letters)
+    print(full)
 
+def multiplylist():
+    name = "delaney"
+    multiplied = name * 5 
+    Nonelist = [None] * 5
+    print(multiplied)
+    print(Nonelist)
+
+def containin():
+    sentence = "Delaney is the best"
+    'is the best' in sentence
+    names = ["delaney","notdelaney"]
+    input('enter your name: ') in names 
+
+def lengthminmax():
+    numbers =[3,7,10]
+    print(len(numbers), min(numbers), max(numbers) )
+
+def lists():
+    letters = list('delaney')
+    print(letters)
+    name="".join(letters) #turns it back into object
+    print(name)
+    del letters[0]  #removes first index
+    print(letters) 
+    letters[:0] = ["D"] #replaces first index
+    print(letters)
+    letters.append("!") #pends on end
+    letters.count("e") # check count 
+    letters.extend("!!!") #can be used to combine different lists
+    letters.index("e") #check index 
+    letters.insert(0,"!") #inserts in index of
+    letters.pop() #returns last element and removes it
+    letters.remove("e") # takes first element out
+    letters.reverse() #puts the list backwards
+    reversed(letters) #only returns list backwards
+    letters.sort() # sorts the list by number or by alphabet
+    letters.sort(len()) #sorts the elements by length 
+    letters.sort(reverse=True)
+    newname = letters.clear() #clears list
