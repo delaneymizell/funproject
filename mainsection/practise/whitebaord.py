@@ -1,56 +1,20 @@
-import random
-import os
-#game = True
-#while game == True: 
-def deck():
-    fulldeck = [2,3,4,5,6,7,8,9,10,"j","q","k","a"] * 4
+def func1():
+    shitlist = [1,2,"shit"]
+    return shitlist
 
-def hit(x):
-    randcard = x[random.randrange(0,len(x))]
-    return randcard
+def func2():
+    import random
+    addnum = random.randrange(0,10)
+    return addnum
 
-def dealerhand():
-    dhand = []
-    return dhand
+def func3(func1):
+    func1.append(func2())
+    print("this is append" ,func1)
+    return func1
 
-def playerhand():
-    phand = []
-    return phand
-
-def sumhand(x):
-    sum = 0
-    for i in x:
-        if type(i) == int:
-            sum += i
-        else:
-            if i == "j"or"q"or"k":
-                sum += 10
-            else:
-                if sum < 11:
-                    sum += 11
-                else: 
-                    sum += 1
-    return sum
-
-def dealerchoice():
-    dealerhand()
-    
-
-
-
-
-
-randcard = deck[random.randrange(0,len(deck))]
-deck.remove(randcard)
-dealer = []
-dealertotal = []
-player = []
-playertotal = []
-
-
-dealer.append(randcard)
-randcard = deck[random.randrange(0,len(deck))]
-deck.remove(randcard)
-dealer.append(randcard)
-dealertotal = sum(dealer)
-print("dealers hand is ", dealertotal ,dealer)
+def func4():
+    print("before", func1())
+    func3(func1())
+    print("after", func1())
+if __name__ == "__main__":
+    func4()()

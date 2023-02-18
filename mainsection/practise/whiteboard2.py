@@ -1,38 +1,19 @@
-def go():
-    megalist = [1,2,3]
-    appendlist(megalist)
-    print(megalist)
+def deck():
+    import random
+    deckfull =  [1,2,3]
+    pickedcard = deckfull.pop(random.randrange(0,len(deckfull)))
+    print("this is the picked card", pickedcard)
+    return pickedcard
 
-def hand(n):
-    n = sum()
+def hit():
+    playerhand()
+    print("this is your hand", playerhand())
 
-def appendlist(m):
-    thing = [1,2,3,"q","k"]
-    sum = 0
-    for i in thing:
-        if type(i) == int:
-            sum += i
-        else:
-            if i == "j"or"q"or"k":
-                sum += 10
-            else:
-                if sum < 11:
-                    sum += 11
-                else: 
-                    sum += 1
-
-    
-    test = [1,2,3,"a"]
-    sum = 0
-    for i in test:
-        if type(i) == int:
-            sum += i
-            print(sum)
-        else:
-            sum+=10
-    print(sum)
-
-
+def playerhand():
+    playhand = [1]
+    return playhand
 
 if __name__ == "__main__":
-    go()
+    hit()
+
+
