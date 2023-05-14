@@ -21,12 +21,15 @@
 # arrayCheck([1, 1, 2, 1, 2, 3]) → True
 
 def arrayCheck(nums):
-    # CODE GOES HERE
+    while index < len(nums)-2:
+        if nums[index] == 1 & nums[index]+1 == 2 & nums[index]+2 == 3:
+            return
+        else 
 
 
 #####################
 ## -- PROBLEM 2 -- ##
-#####################
+
 
 # Given a string, return a new string made of every other character starting
 # with the first, so "Hello" yields "Hlo".
