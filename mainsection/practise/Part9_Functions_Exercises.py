@@ -20,11 +20,13 @@
 # arrayCheck([1, 1, 2, 4, 1]) → False
 # arrayCheck([1, 1, 2, 1, 2, 3]) → True
 
+#this is was dumb and not fun but good prac
 def arrayCheck(nums):
-    while index < len(nums)-2:
-        if nums[index] == 1 & nums[index]+1 == 2 & nums[index]+2 == 3:
-            return
-        else 
+    for i in range(len(nums)-2):
+        if nums[i] == 1 and nums[i+1] == 2 and nums[i+2] == 3:
+            return print(nums , "True")
+    return print(nums , "False")
+            
 
 
 #####################
@@ -40,9 +42,18 @@ def arrayCheck(nums):
 # stringBits('Hi') → 'H'
 # stringBits('Heeololeo') → 'Hello'
 
-def stringBits(str):
-  # CODE GOES HERE
+# mine is longer then the answer, I interated through list, instead of range of list
+# which caused an extra line to intiate i and then sequence it
+# im dumb 
 
+def stringBits(str):
+    i = 0
+    newstring= ""
+    for char in str:
+        if i % 2 == 0:
+            newstring+= char
+        i+=1
+    print(newstring)
 
 #####################
 ## -- PROBLEM 3 -- ##
