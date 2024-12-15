@@ -23,9 +23,9 @@ print(printer())
 # What do you imagine the output of printer() is? 25 or 50? What is the output
 # of print x? 25 or 50? Or what about this:
 
-print(x)
-print(printer())
-print(x)
+print(x) #25
+print(printer()) #50
+print(x) # 224
 
 
 # Interesting! But how does Python know which "x" you're referring to in your
