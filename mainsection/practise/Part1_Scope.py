@@ -25,7 +25,7 @@ print(printer())
 
 print(x) #25
 print(printer()) #50
-print(x) # 224
+print(x) # 25
 
 
 # Interesting! But how does Python know which "x" you're referring to in your
